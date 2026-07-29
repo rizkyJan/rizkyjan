@@ -39,7 +39,7 @@ export default function Home() {
       role: "Full-Stack Developer",
       title: "Absensi QR Karang Taruna Putra Giyanti",
       desc: "Platform manajemen kehadiran kegiatan pemuda berbasis web dengan integrasi scanner QR code untuk pencatatan data yang cepat dan akurat.",
-      image: "/absensi-kartar.jpg", // Pastikan file gambar ini ada di folder public kamu
+      image: "/putragiyanti.jpg", // Pastikan file gambar ini ada di folder public kamu
     },
     {
       id: "automation-bot",
