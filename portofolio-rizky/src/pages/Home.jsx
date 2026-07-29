@@ -18,7 +18,7 @@ export default function Home() {
     return () => clearInterval(interval);
   }, [specialties.length]);
 
-  // Data Proyek dengan tambahan 1 Proyek Jaringan dan penyesuaian role pada STB Debian
+  // Data Proyek dengan tambahan Sistem Absensi Karang Taruna
   const projectData = [
     {
       id: "siomas",
@@ -33,6 +33,13 @@ export default function Home() {
       title: "Infrastruktur Server & VPS",
       desc: "Pengelolaan server Linux (Ubuntu/Nginx) untuk bot dan web apps dengan fokus keamanan SSH.",
       image: "/vps-htop.jpg",
+    },
+    {
+      id: "absensi-kartar", // Card baru ditambahkan di sini
+      role: "Full-Stack Developer",
+      title: "Absensi QR Karang Taruna Putra Giyanti",
+      desc: "Platform manajemen kehadiran kegiatan pemuda berbasis web dengan integrasi scanner QR code untuk pencatatan data yang cepat dan akurat.",
+      image: "/absensi-kartar.jpg", // Pastikan file gambar ini ada di folder public kamu
     },
     {
       id: "automation-bot",
@@ -50,9 +57,9 @@ export default function Home() {
     },
     {
       id: "dishub-notulensi",
-      role: "Web Dev & IT Support", // Role disesuaikan
+      role: "Web Dev & IT Support",
       title: "Aplikasi Notulensi & Local Hosting",
-      desc: "Digitalisasi risalah rapat Dishub Boyolali dengan inovasi local hosting STB Debian 24/7 (Konfigurasi Jaringan & Port).", // Deskripsi disesuaikan
+      desc: "Digitalisasi risalah rapat Dishub Boyolali dengan inovasi local hosting STB Debian 24/7 (Konfigurasi Jaringan & Port).",
       image: "/dashboard-notulen.jpg",
     },
     {
@@ -70,7 +77,7 @@ export default function Home() {
       image: "/masjid.jpg",
     },
     {
-      id: "network-mikrotik", // Card baru ditambahkan di sini
+      id: "network-mikrotik",
       role: "IT Support",
       title: "Manajemen Jaringan & Mikrotik",
       desc: "Implementasi VLAN, routing, dan manajemen bandwidth menggunakan router Mikrotik untuk efisiensi koneksi lokal.",

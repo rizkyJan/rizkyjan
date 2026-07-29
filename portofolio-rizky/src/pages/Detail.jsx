@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 export default function Detail() {
   const { id } = useParams();
 
-  // Data 8 Proyek Final (Termasuk tambahan Mikrotik & IT Support)
+  // Data 9 Proyek Final (Termasuk tambahan Mikrotik & Sistem Absensi Karang Taruna)
   const projects = {
     siomas: {
       title: "SIOMAS: Sistem Otomatis Pengelolaan PAMSIMAS",
@@ -34,6 +34,21 @@ export default function Detail() {
         "Konfigurasi IP Static dan Port Forwarding untuk akses jaringan lokal.",
       ],
       images: ["/sertif-dishub.jpg"],
+    },
+    "absensi-kartar": {
+      title: "Sistem Absensi QR Karang Taruna Putra Giyanti",
+      role: "Full-Stack Developer",
+      tech: "PHP Laravel, MySQL, QR Scanner Library",
+      problem:
+        "Pencatatan kehadiran pemuda pada setiap kegiatan masih menggunakan kertas manual yang rawan hilang dan sulit direkap.",
+      solution:
+        "Membangun platform absensi berbasis web dengan integrasi pemindai QR Code agar proses presensi lebih cepat, modern, dan paperless.",
+      results: [
+        "Kecepatan proses absensi meningkat drastis hanya dengan memindai QR Code masing-masing anggota.",
+        "Rekapitulasi dan laporan kehadiran otomatis di-generate di dalam database.",
+        "Meningkatkan transparansi dan kedisiplinan partisipasi anggota Karang Taruna.",
+      ],
+      images: ["/putragiyanti.jpg", "/qr-code.jpg"],
     },
     "capstone-resep": {
       title: "Web Resep Makanan Berbasis AI (Capstone)",
@@ -110,7 +125,6 @@ export default function Detail() {
       ],
       images: ["/kas-dashboard.jpg"],
     },
-    // DATA BARU: JARINGAN & MIKROTIK
     "network-mikrotik": {
       title: "Manajemen Jaringan & Mikrotik",
       role: "IT Support / Network Tech",
